@@ -15,6 +15,8 @@ public class _05_ArrayList {
         String cumle = scanner.nextLine();
 
         String[] array = cumle.split("");
+
+
         ArrayList<String> list = reverseArray(array);
         arrayYazma(list);
 

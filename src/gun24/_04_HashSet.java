@@ -15,13 +15,13 @@ public class _04_HashSet {
         birlesikSet.addAll(hashSet1); // önce 1. seti ekledi
         birlesikSet.addAll(hashSet2); // sonra 2. seti ekledi
         System.out.println("birlesikSet = " + birlesikSet);
-
+        System.out.println("------------------------------------");
         // bu iki hash setin farkini bulalim
         HashSet<Integer> farkSet = new HashSet<>(hashSet1); // farkSet.addAll(hashSet1)
         farkSet.removeAll(hashSet2); // farkSet degiskenine hashSet1 i eklemistik üst satirda
         System.out.println("farkSet = " + farkSet);
         //ya da  hashSet1.removeAll(hashSet2); ama bunu yaptigimiz zaman hashSet1 icindeki 5 artik kaldirilir
-
+        System.out.println("-----------------------------------------");
         //ortak elemanlari bulma
         HashSet<Integer> ortakSet = new HashSet<>(hashSet1);
         ortakSet.retainAll(hashSet2);

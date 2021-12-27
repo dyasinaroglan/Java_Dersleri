@@ -16,7 +16,7 @@ public class _02_ArrayList {
 
         // Diziler icin Arrays.sort() metodu yerine listler icin bu kullanilir
         Collections.sort(list);
-        System.out.println("list e düzenlendikten sonra = " + list);
+        System.out.println("list e düzenlendikten sonra = " + list); //küçükten büyüğe sıralar
 
         Collections.reverse(list);
         System.out.println("list yi tersten yazdirma = " + list);

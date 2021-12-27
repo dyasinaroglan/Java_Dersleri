@@ -1,62 +1,40 @@
 package gun30Ment;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 
 public class _01ArrayList {
-
     public static void main(String[] args) {
-        /*
-            Array               ArrayList
-            siniri belli        Sinir belli degil
+        // array sınırı belli... ArrayList sınır belli değil.
 
-         */
-        String str = " aa ";        // immutable
-        str.trim();
-        System.out.println(str.trim());
+        String str ="   aa    ";
+        str.trim(); // aynen yazar  değiştirmez. değiştiremiyorsam immutable
+        //Stringlerde atama yapmadan dğişiklik yapamıyoruz
         System.out.println(str);
-        str = str.trim();           // "aa"
-        System.out.println(str);
+        str=str.trim();
+        System.out.println(str);  //immutable
 
-
-        int a = 5;
-
-        int[] arr = new int[5];
-        int[] arr1 = new int[10];
-
-        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>(5); //initial kapasite 5 kapasite
+        //list referans burada
+        list.add(4);
         list.add(1);
-        list.add(2);
-        list.add(23);
-        list.add(10);
-        list.add(1234);
-        list.add(-1);
+        list.add(3);
+        list.add(12);
+        list.add(5);
         list.add(1);
+        list.size();
         System.out.println(list);
 
-        LinkedList<Integer> list1 = new LinkedList<>();
-        list1.add(1);
-        list1.add(2);
-        list1.add(23);
-        list1.add(10);
-        list1.add(1234);
-        list1.add(-1);
-        list1.add(1);
-        System.out.println(list1);
+        //ArrayList Linklist aynı bir fark yok. sadece performans farkı var. biri daha hızlı
 
         System.out.println(list.get(3));
 
-        System.out.println("------------");
-
         for (int i = 0; i < list.size(); i++) {
-            if (i==4) continue;
-            System.out.print(list.get(i) + "\t");
+            System.out.println(list.get(i));
         }
-        System.out.println();
+        for (Integer i : list) {  //iterable sayılabilir
+            System.out.println(i+"\t");
+            
+        }
 
-        for (Integer i : list) {      // iterable
-            System.out.print(i + "\t");
-        }
     }
-
 }

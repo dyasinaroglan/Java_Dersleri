@@ -19,9 +19,13 @@ public class Main {
         i2.babaAta(dede);
 
         i1.senKimsin();
+        System.out.println("----------------");
         i1.babanKim();
+        System.out.println("-----------------");
         i1.annenKim();
+        System.out.println("-------------------");
         i1.baba.babanKim();
+        System.out.println("--------------------");
         i2.babanKim();
 
     }
