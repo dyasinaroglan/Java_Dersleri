@@ -17,7 +17,7 @@ public class _04_Array {
         for (int i = 0; i < array.length; i++) { // array.length -> 5 burda dizinin kac elemanli oldugunu belirtir
             System.out.println("isim girin");
             array[i] = scanner.nextLine();
-            if (array[i].length()>6){ // array[i].length() -> dizinin o indisindeki elemanin uzunlugu
+            if (array[i].length()>6){ // array[i].length() -> dizinin i. indisindeki elemanin uzunlugu
                 miktar++;
             }
         }

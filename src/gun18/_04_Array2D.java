@@ -17,17 +17,17 @@ public class _04_Array2D {
         // vize final notu girilecegi icin sütun sayisi 2
         // ama kac ogrenci olacagini bilmedigimiz icin ogrSayisi dedik satir icin
 
-        for (int satir = 0; satir <notlarTablosu.length ; satir++) {
-            for (int sütun = 0; sütun < notlarTablosu[satir].length; sütun++) {
-                //kac ogrenci olursa olsun toplamda 2 sütun var vize ve final
-                // 0. sütun vize notlari, 1. sütun final notlari
+        for (int i = 0; i <notlarTablosu.length ; i++) {
+            for (int j = 0; j < notlarTablosu[i].length; j++) {
+                //kac ogrenci olursa olsun toplamda 2 j var vize ve final
+                // 0. j vize notlari, 1. j final notlari
                 // if kosulu ile vize ve final notlari girmeyi sagladik
-                if (sütun==0){
-                    System.out.println((satir+1)+". ogrenci "+"vize notu");
-                    notlarTablosu[satir][sütun] = scanner.nextInt();
+                if (j==0){
+                    System.out.println((i+1)+". ogrenci "+"vize notu");
+                    notlarTablosu[i][j] = scanner.nextInt();
                 }else {
-                    System.out.println((satir+1)+". ogrenci "+"final notu");
-                    notlarTablosu[satir][sütun] = scanner.nextInt();
+                    System.out.println((i+1)+". ogrenci "+"final notu");
+                    notlarTablosu[i][j] = scanner.nextInt();
                 }
             }
         }

@@ -23,6 +23,7 @@ public class _01_QuestionAndAnswer {
         Scanner scannerStr = new Scanner(System.in);
         Scanner scannerInt = new Scanner(System.in);
 
+
         String[] isimSoyisim = new String[5];
         int[] notlar = new int[5]; // {56,65,90,96,100}
 

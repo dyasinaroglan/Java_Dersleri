@@ -15,7 +15,7 @@ public class _04_ArrayExample {
         String[] cumle = new String[str.length()];
         int kelimeSayisi = 1;
         for (int i = 0; i < cumle.length; i++) {
-            cumle[i]= String.valueOf(str.charAt(i));
+            cumle[i]= String.valueOf(str.charAt(i)); //
             if (str.charAt(i)==' '){
                 kelimeSayisi++;
             }
